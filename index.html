@@ -13,35 +13,65 @@
     :root { --blue:#4A90E2; --card:#5AA0F2; --text:#fff; --bg:#f3f7fb; }
     *{box-sizing:border-box}
     body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:#1e1e1e}
-    .wrap{max-width:720px;margin:56px auto;padding:0 16px}
-    .card{background:var(--card);color:var(--text);border-radius:20px;box-shadow:0 14px 28px rgba(0,0,0,.12),0 10px 10px rgba(0,0,0,.06);padding:36px 28px;text-align:center}
+    .wrap{max-width:900px;margin:56px auto;padding:0 16px}
+    .card{
+      background:var(--card);
+      color:var(--text);
+      border-radius:20px;
+      box-shadow:0 14px 28px rgba(0,0,0,.12),0 10px 10px rgba(0,0,0,.06);
+      padding:40px 28px;
+      text-align:center
+    }
     
-    /* Avatar to hơn và ít bị cắt tóc */
+    /* Avatar cực lớn, không cắt tóc */
     .avatar{
-      width:200px;
-      height:200px;
+      width:360px;
+      height:360px;
       border-radius:50%;
-      object-fit:cover;
+      object-fit:contain;   /* giữ nguyên ảnh */
+      background:#fff;
       display:block;
-      margin:0 auto 18px;
-      border:4px solid rgba(255,255,255,.9);
+      margin:0 auto 26px;
+      border:8px solid rgba(255,255,255,.9);
     }
 
-    h1{margin:8px 0 6px;font-size:40px;line-height:1.1}
-    .subtitle{margin:0 0 18px;opacity:.9}
+    h1{margin:12px 0 8px;font-size:48px;line-height:1.1}
+    .subtitle{margin:0 0 22px;opacity:.9;font-size:22px}
 
     /* Social icon */
-    .links a{display:inline-block;margin:0 10px;font-size:26px;color:#fff;text-decoration:none;transition:0.2s}
-    .links a:hover{color:#003f91;transform:scale(1.2)}
+    .links a{
+      display:inline-block;
+      margin:0 16px;
+      font-size:36px;
+      color:#fff;
+      text-decoration:none;
+      transition:0.2s
+    }
+    .links a:hover{color:#003f91;transform:scale(1.25)}
 
-    .org{margin:14px 0 6px;font-weight:800}
+    .org{margin:20px 0 12px;font-weight:800;font-size:22px}
 
     /* CV button */
-    .btn{display:inline-block;margin-top:18px;background:#fff;color:var(--blue);padding:12px 20px;border-radius:10px;font-weight:700;text-decoration:none;box-shadow:0 6px 12px rgba(0,0,0,.12);transition:0.2s}
+    .btn{
+      display:inline-block;
+      margin-top:26px;
+      background:#fff;
+      color:var(--blue);
+      padding:16px 28px;
+      border-radius:12px;
+      font-weight:700;
+      font-size:20px;
+      text-decoration:none;
+      box-shadow:0 6px 12px rgba(0,0,0,.12);
+      transition:0.2s
+    }
     .btn:hover{background:#e6f0ff;color:#003f91}
 
-    footer{margin:14px 0 0;text-align:center;color:#666;font-size:13px}
-    @media (max-width:480px){h1{font-size:32px}.avatar{width:160px;height:160px}}
+    footer{margin:20px 0 0;text-align:center;color:#666;font-size:15px}
+    @media (max-width:480px){
+      h1{font-size:32px}
+      .avatar{width:220px;height:220px}
+    }
   </style>
 </head>
 <body>
