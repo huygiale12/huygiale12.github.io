@@ -15,15 +15,33 @@
     body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:#1e1e1e}
     .wrap{max-width:720px;margin:56px auto;padding:0 16px}
     .card{background:var(--card);color:var(--text);border-radius:20px;box-shadow:0 14px 28px rgba(0,0,0,.12),0 10px 10px rgba(0,0,0,.06);padding:36px 28px;text-align:center}
-    .avatar{width:160px;height:160px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 18px;border:4px solid rgba(255,255,255,.9)}
+    
+    /* Avatar to hơn và ít bị cắt tóc */
+    .avatar{
+      width:200px;
+      height:200px;
+      border-radius:50%;
+      object-fit:cover;
+      display:block;
+      margin:0 auto 18px;
+      border:4px solid rgba(255,255,255,.9);
+    }
+
     h1{margin:8px 0 6px;font-size:40px;line-height:1.1}
     .subtitle{margin:0 0 18px;opacity:.9}
-    .links a{display:inline-block;margin:0 10px;font-size:24px;color:#fff;text-decoration:none;transition:0.2s}
-    .links a:hover{color:#dfefff}
+
+    /* Social icon */
+    .links a{display:inline-block;margin:0 10px;font-size:26px;color:#fff;text-decoration:none;transition:0.2s}
+    .links a:hover{color:#003f91;transform:scale(1.2)}
+
     .org{margin:14px 0 6px;font-weight:800}
-    .btn{display:inline-block;margin-top:18px;background:#fff;color:var(--blue);padding:12px 20px;border-radius:10px;font-weight:700;text-decoration:none;box-shadow:0 6px 12px rgba(0,0,0,.12)}
+
+    /* CV button */
+    .btn{display:inline-block;margin-top:18px;background:#fff;color:var(--blue);padding:12px 20px;border-radius:10px;font-weight:700;text-decoration:none;box-shadow:0 6px 12px rgba(0,0,0,.12);transition:0.2s}
+    .btn:hover{background:#e6f0ff;color:#003f91}
+
     footer{margin:14px 0 0;text-align:center;color:#666;font-size:13px}
-    @media (max-width:480px){h1{font-size:32px}.avatar{width:130px;height:130px}}
+    @media (max-width:480px){h1{font-size:32px}.avatar{width:160px;height:160px}}
   </style>
 </head>
 <body>
